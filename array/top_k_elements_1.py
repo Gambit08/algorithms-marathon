@@ -1,5 +1,5 @@
 # Leetcode #347
-# Time Complexity - > O(nlogn)
+# Time Complexity -> O(nlogn)
 
 def topKFrequent(self, nums: List[int], k: int) -> List[int]:
     """
