@@ -18,3 +18,20 @@ def two_sum_1(nums, target):
         compliment = target - num
         if compliment in index and index[compliment] != i:
             return [i, index[compliment]]
+        
+
+# Approach 2
+# One pass
+# Concept remains the same, but we try to fill hashmap and lookup compliments in one iterations over nums
+        
+def two_sum_2(nums, target):
+
+    index = {}
+
+    for i, num in enumerate(nums):
+        compliment = target - num
+
+        if compliment in index:
+            return [i, index[compliment]]
+        
+        index[num] = i
