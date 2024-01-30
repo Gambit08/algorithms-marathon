@@ -50,6 +50,8 @@ def _topKFrequent(self, nums: List[int], k: int) -> List[int]:
                 res.append(num)
                 k -= 1
             else:
-                return res
+                break
+    
+    return res
 
 
